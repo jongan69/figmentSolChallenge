@@ -9,7 +9,7 @@ import Layout from '../components/Layout';
 function MyApp({ Component, pageProps }: AppProps) {
   const [network, setNetwork] = useState<Cluster | undefined>("devnet");
   const [account, setAccount] = useState<Keypair | null>(null);
-  const [mnemonic, setMnemonic] = useState<string | null>(null);
+  const [mnemonic, setMnemonic] = useState<string | null>("demo");
   const [balance, setBalance] = useState<number | null>(null);
 
   return (
